@@ -1,20 +1,79 @@
 .main {
-  background-color: rgb(0, 0, 0);
-  height: 100vh;
-  width: 100%;
+  background-color: black;
+  font-family: sans-serif;
+  height: 600px;
+  width: 800px;
+  border-radius: 10px;
   display: flex;
+  position: relative;
   justify-content: center;
+  overflow: hidden;
   align-items: center;
 }
 
+.main::before {
+    background:rgba(0, 38, 255, 0.212);
+    position: absolute;
+    filter: blur(50px);
+    border-radius: 50%;
+    content: '';
+    width: 500px;
+    height: 500px;
+    top: -50%;
+    left: 70%;  
+}
+
+.main::after {
+     background:rgba(0, 38, 255, 0.212);
+    position: absolute;
+    filter: blur(50px);
+    border-radius: 50%;
+    content: '';
+    width: 500px;
+    height: 500px;
+    top: 65%;
+    left: -35%;  
+}
+
 .sectionLogin {
-    background-color: red;
-   
+  background-color: rgba(255, 255, 255, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  width: 300px;
 }
 
 .sectionLogin form {
-    wi
-    display: flex;
-    flex-direction: column;
-    
+  display: flex;
+  gap: 10px;
+  width: 250px;
+  flex-direction: column;
+}
+
+.sectionLogin form input {
+  background-color: #1c1c1e;
+  border: 1px solid #303033;
+  padding: 10px;
+  color: white;
+  border-radius: 12px;
+  text-indent: 5px;
+}
+
+.sectionLogin form input:focus {
+    outline: none;
+}
+
+.sectionLogin form button {
+  background-color: white;
+  border: none;
+  
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.sectionLogin form button:hover {
+    cursor: pointer;
+    background-color: whitesmoke;
 }

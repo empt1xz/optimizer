@@ -14,7 +14,12 @@
       {
         "title": "myapp",
         "width": 800,
-        "height": 600
+        "decorations": false,
+        "maximizable": false,
+        "shadow": false,
+        "resizable": false,
+        "height": 600,
+        "transparent": true
       }
     ],
     "security": {

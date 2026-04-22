@@ -1,3 +1,4 @@
+import Exitbar from "../Header/Header"
 import Style from "./login.module.css"
 
 
@@ -9,13 +10,12 @@ export default function Login() {
 
     return ( 
         <main className={Style.main}>
+            <Exitbar />
             <section className={Style.sectionLogin}>
-                <h1>Welcome back!</h1>
+                
                 <form>
-                    <label htmlFor="key">Key</label>
-                    <input type="text" placeholder="Key" />
-                    <button>Sign in</button>
-                    
+                    <input type="text" placeholder="KEY" />
+                    <button>Sign In</button>
                 </form>
             </section>
 
