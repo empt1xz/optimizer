@@ -13,12 +13,12 @@
     "windows": [
       {
         "title": "myapp",
-        "width": 800,
+        "width": 1000,
         "decorations": false,
         "maximizable": false,
         "shadow": false,
         "resizable": false,
-        "height": 600,
+        "height": 700,
         "transparent": true
       }
     ],
